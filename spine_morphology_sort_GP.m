@@ -9,8 +9,8 @@ for i=1:numOfSheets
     
     [num raw txt]= xlsread('new fugw spines R156 summary.xlsx',i,'K:K');%opens excel file sheet one and coloumn k as raw "text"%
     spine_morph = raw
-    clear raw;
-    clear txt;
+    %%clear raw;
+    %%clear txt;
     clear num;
     spine_morph(1:1)=[] %%Deletes first cell - looks like it always contains the title 'TYPE'??%%
 %%%header = {'TYPE'}%%
